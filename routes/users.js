@@ -33,7 +33,12 @@ router.post("/login", (req, res) => {
   });
 
   // Responding with the generated token
-  res.json({ token });
+  res.json({
+    token,
+    user: {
+      username: user.username,
+    },
+  });
 });
 
 // Route handler for user registration
