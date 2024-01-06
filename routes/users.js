@@ -37,7 +37,7 @@ router.post("/login", (req, res) => {
     token,
     user: {
       username: user.username,
-      admin: user.admin || false,
+      admin: user.admin || false, //pass the admin but default to false
     },
   });
 });

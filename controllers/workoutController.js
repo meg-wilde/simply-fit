@@ -55,7 +55,6 @@ exports.deleteWorkout = async (req, res) => {
       // Workout with the given ID not found
       return res.status(404).json({ error: "Workout not found" });
     }
-
     res.json({
       message: "Workout deleted successfully",
       workout: deletedWorkout,

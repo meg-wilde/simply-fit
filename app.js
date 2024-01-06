@@ -7,9 +7,9 @@ const users = require("./users.json");
 const middleware = require("./routes/middleware");
 const usersRoute = require("./routes/users");
 const workoutRoutes = require("./routes/workoutRoutes");
+const port = 5000;
 
 const app = express();
-const PORT = process.env.PORT || 5000; //set port to 5000
 
 // MongoDB connection URI
 const uri =
@@ -58,6 +58,6 @@ app.get("/api/workout", async (req, res) => {
 app.use("/api", workoutRoutes);
 
 //start the server
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
 });
