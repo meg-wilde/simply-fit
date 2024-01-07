@@ -1,4 +1,14 @@
-## Hyperion Dev: Final Project Definition
+## Hyperion Dev: Final Project
+
+## Installation
+
+1. Install the app by cloning the repository to your local machine: git clone https://github.com/meg-wilde/simply-fit
+
+2. install backend dependencies: npm install
+
+3. navigate to frontend: cd frontend
+
+4. install frontend dependencies: npm install
 
 ## Brand:
 
@@ -7,6 +17,19 @@ Simply Fit
 ## Summary:
 
 A fitness website where “admin” users are trainers who can upload new workouts to the system, and regular users can access the workouts, mark them as complete and add their own score and notes to each workout.
+
+## How to use the app:
+
+1. Login with an existing user or register as a new user. All new users are registered as non-admins.
+2. View workouts and users can save workouts to their saved workouts.
+3. Admins can add, edit and delete workouts.
+
+## How to run the app:
+
+1. Install using the Installation instructions above.
+2. Test the frontend by navigating to cd frontend and running npm test.
+3. Test the backend from the route file (simply-fit-app) by running npm text.
+4. Start the app from the route file (simply-fit-app) by npm start.
 
 ## System Architecture
 
@@ -141,3 +164,12 @@ Our app will take some of the key benefits that other workout apps offer includi
 ## Wireframes
 
 See attached files SimplyFit.draw.io
+
+## Security
+
+The app had been secured using Helmet to set various HTTP headers. In addition the authentication uses JWT to avoid passing user info to the frontend.
+
+## Links
+
+GitHub: https://github.com/meg-wilde/simply-fit
+Vercel:

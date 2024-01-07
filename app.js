@@ -10,7 +10,6 @@ const workoutRoutes = require("./routes/workoutRoutes");
 const port = 5000;
 
 const app = express();
-
 // MongoDB connection URI
 const uri =
   "mongodb+srv://megcwilde:CarsPass456@fitness.y05t243.mongodb.net/?retryWrites=true&w=majority";
@@ -61,3 +60,6 @@ app.use("/api", workoutRoutes);
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
+
+// Export the app for testing purposes
+module.exports = app;
