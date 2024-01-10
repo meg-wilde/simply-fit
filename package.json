@@ -7,7 +7,7 @@
     "test": "jest",
     "test-backend": "jest app.test.js",
     "start": "concurrently \"npm run backend\" \"npm run frontend\"",
-    "backend": "nodemon app.js",
+    "backend": "node app.js",
     "frontend": "cd frontend && npm start"
   },
   "keywords": [],
