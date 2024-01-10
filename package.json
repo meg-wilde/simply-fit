@@ -6,9 +6,9 @@
   "scripts": {
     "test": "jest",
     "test-backend": "jest app.test.js",
-    "start": "concurrently \"npm run start-server\" \"npm run start-client\"",
-    "start-server": "nodemon app.js",
-    "start-client": "cd frontend && npm start"
+    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "nodemon app.js",
+    "frontend": "cd frontend && npm start"
   },
   "keywords": [],
   "author": "",
