@@ -172,4 +172,3 @@ The app had been secured using Helmet to set various HTTP headers. In addition t
 ## Links
 
 GitHub: https://github.com/meg-wilde/simply-fit
-Vercel:
