@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test-backend": "jest app.test.js",
+    "test": "jest app.backend.test.js",
     "start": "concurrently \"npm run backend\" \"npm run frontend\"",
     "backend": "node app.js",
     "frontend": "cd frontend && npm start"
